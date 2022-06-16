@@ -1,0 +1,140 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    list-style: none;
+    box-sizing: border-box;
+    font-size: 10px;
+}
+
+.herostn {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,.75), rgba(0,0,0,.75)), url(background.png);
+    background-size: cover;
+    background-position: center;
+    padding: 0 8%;
+    }
+
+.navbar {
+    height: 12%;
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 50px;
+    cursor: pointer;
+}
+
+.menu-icon {
+    width: 30px;
+    cursor: pointer;
+    margin-left: 40px;
+}
+
+nav {
+    flex: 1;
+    text-align: right;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-left: 60px;
+}
+
+nav a {
+    color: #fff;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+}
+
+article {
+    width: 100%;
+    height: 88%;
+    display: flex;
+    align-items: center;
+    
+}
+
+article h1 {
+    font-size: 10rem;
+    color: #fff;
+}
+
+article p {
+    font-size: 1.2rem;
+    color: #fff;
+    line-height: 1.8;
+}
+
+.col {
+    flex: 1;
+}
+
+.col:nth-of-type(1){
+    padding-right: 300px;
+}
+
+button {
+    outline: none;
+    width: 18rem;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #000;
+    background: #fff;
+    border-radius: 30px;
+    margin-top: 30px;
+    padding: 10px 0;
+    cursor: pointer;
+}
+
+.card {
+    width: 200px;
+    height: 230px;
+    display: inline-block;
+    border-radius: 10px;
+    background-size: cover;
+    background-position: center;
+    padding: 15px 20px;
+    margin: 10px 15px;cursor: pointer;
+    transition: transform .5s; 
+}
+
+
+.card1 {
+    background-image: url(pic-1.png);
+}
+.card2 {
+    background-image: url(pic-2.png);
+}
+.card3 {
+    background-image: url(pic-3.png);
+}
+.card4 {
+    background-image: url(pic-4.png);
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    background: rgba(0,0,0,.5);
+}
+
+.card h5 {
+    font-size: 1.2rem;
+    width: 1;
+}
+
+.card p {
+    opacity: 0;
+    padding-top: 10px;
+}
+
+.card:hover h5 {
+    color: #fff;
+}
+
+.card:hover p {
+    opacity: 1;
+}
